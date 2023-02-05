@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+
+.div-calculadora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.corpo-calculadora{
+    width: 20em;
+    height: 30em;
+    background-color: #9b9595;
+}
