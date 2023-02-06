@@ -43,7 +43,6 @@ function alerta(mensagem, tipo){
     if($(".msg-alerta-copia").length > 6){
         $(".msg-alerta-copia:visible").first().hide();
     }
-    console.log("sdasd");
     setTimeout(function(){
         $(copiaAlerta).fadeOut(200);
         setTimeout(function(){
