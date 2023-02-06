@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .div-calculadora{
@@ -30,6 +31,8 @@ body{
     height: 100%;
     background-color: #d0dfd3;
     border-radius: 6px;
+    text-align: end;
+    font-size: 1.5rem;
 }
 
 .div-botoes{
@@ -40,6 +43,7 @@ body{
     padding: 7px;
     height: 100%;
     align-items: center;
+    justify-content: center;
 }
 .div-botao{
     display: flex;
@@ -65,6 +69,30 @@ body{
     grid-column-start: 3;
     grid-column-end: 5;
 }
+.btn-igual{
+    background-color: #e4e4ff;
+}
 .btn-final{
     width: 100%;
+}
+
+.div-msg-alerta{
+    margin-left: 3em;
+    margin-top: 2em;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+.msg-alerta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: 17em;
+    height: 7em;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px #938a8a;
 }

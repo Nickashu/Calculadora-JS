@@ -9,33 +9,41 @@
     <title>Calculadora</title>
 </head>
 <body>
+    <div class="div-msg-alerta">
+        <div class="msg-alerta msg-alerta-principal" style="display: none;"></div>
+    </div>
+
+    </div>
     <div class="div-calculadora">
         <div class="corpo-calculadora">
             <div class="div-tela">
                 <input type="text" class="input-tela" disabled="disabled">
             </div>
             <div class="div-botoes">
-                <div class="div-botao"><button class="btn-calculadora">C</button></div>
-                <div class="div-botao"><button class="btn-calculadora">CE</button></div>
-                <div class="div-botao"><button class="btn-calculadora"><img src="imgs/icon-backspace.png" alt="Ícone Backspace"></button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">0</button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">1</button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">2</button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">3</button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">4</button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">5</button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">6</button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">7</button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">8</button></div>
-                <div class="div-botao btn-num"><button class="btn-calculadora">9</button></div>
-                <div class="div-botao btn-virgula"><button class="btn-calculadora">.</button></div>
-                <div class="div-botao btn-operacao"><button class="btn-calculadora">+</button></div>
-                <div class="div-botao btn-operacao"><button class="btn-calculadora">-</button></div>
-                <div class="div-botao btn-operacao"><button class="btn-calculadora">x</button></div>
-                <div class="div-botao btn-operacao"><button class="btn-calculadora">/</button></div>
-                <div class="div-botao div-btn-final btn-igual"><button class="btn-calculadora btn-final">=</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-limpar">C</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-limpar-registro">CE</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-backspace"><img src="imgs/icon-backspace.png" alt="Ícone Backspace"></button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">0</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">1</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">2</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">3</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">4</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">5</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">6</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">7</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">8</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-num">9</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-virgula">.</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-operacao">+</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-operacao">-</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-operacao">x</button></div>
+                <div class="div-botao"><button class="btn-calculadora btn-operacao">/</button></div>
+                <div class="div-botao div-btn-final"><button class="btn-calculadora btn-igual btn-final">=</button></div>
             </div>
         </div>
     </div>
 </body>
+<script src="utils.js"></script>
+<script src="jquery.js"></script>
+<script src="index.js"></script>
 </html>
