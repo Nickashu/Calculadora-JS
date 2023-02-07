@@ -84,7 +84,7 @@ function calcular(expressao){
         if(charOperacoes.indexOf(expressao.charAt(expressao.length - 1)) > -1)
             alerta("A expressão está incompleta", tiposAlerta.danger);
         else{
-            resultado = eval(expressao.replace("x", "*"));
+            resultado = eval(expressao.replaceAll("x", "*"));
             if(resultado.toString().indexOf(".") > -1)
                 resultado = resultado.toFixed(5);
             $(".corpo-calculadora").find(".input-tela").addClass("result");
