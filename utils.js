@@ -39,8 +39,9 @@ function alerta(mensagem, tipo){
 
     let copiaAlerta = $(".div-msg-alerta").find(".msg-alerta-principal").clone();
     $(".div-msg-alerta").append(copiaAlerta);
-    $(copiaAlerta).removeClass("msg-alerta-principal").addClass("msg-alerta-copia").text(mensagem).css("background-color", bgAlerta).fadeIn(200);
-    if($(".msg-alerta-copia").length > 6){
+    $(copiaAlerta).find(".msg").text(mensagem);
+    $(copiaAlerta).removeClass("msg-alerta-principal").addClass("msg-alerta-copia").css("background-color", bgAlerta).fadeIn(200);
+    if($(".msg-alerta-copia").length > 1){
         $(".msg-alerta-copia:visible").first().hide();
     }
     setTimeout(function(){
